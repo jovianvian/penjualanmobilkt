@@ -1,57 +1,121 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:background="@drawable/bg_app_gradient"
+    android:fillViewport="true">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Selamat Datang Di Showroom Ajibe"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+        android:layout_margin="18dp"
+        android:background="@drawable/bg_panel"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <Button
-        android:id="@+id/tombolmobil"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data Mobil" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Showroom Ajibe"
+            android:textColor="@color/text_title"
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/tombolpembeli"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data Pembeli" />
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="18dp"
+            android:text="Pilih menu data yang ingin kamu kelola"
+            android:textColor="@color/text_body"
+            android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/tombolpaket"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data Paket" />
+        <Button
+            android:id="@+id/tombolmobil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Data Mobil"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_on_primary"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/tombolbeli"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data Beli Cash" />
+        <Button
+            android:id="@+id/tombolpembeli"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Data Pembeli"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_on_primary"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/tombolkredit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data Beli Kredit" />
+        <Button
+            android:id="@+id/tombolpaket"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Data Paket"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_on_primary"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/tombolcicil"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data Bayar Cicilan" />
-    <Button
-        android:id="@+id/tombollogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logout" />
+        <Button
+            android:id="@+id/tombolbeli"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Data Beli Cash"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_on_primary"
+            android:textStyle="bold" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/tombolkredit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Data Beli Kredit"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_on_primary"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tombolcicil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Data Bayar Cicilan"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_on_primary"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tombollaporan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Laporan Keuangan"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_on_primary"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/tombollogout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_button_danger"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="@color/on_danger"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
